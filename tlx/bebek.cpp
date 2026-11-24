@@ -1,31 +1,24 @@
-// Setelah memiliki kandang - kandang bebek yang sangat luas,
-//     Pak Dengklek memiliki resolusi tahun baru yakni membeli bebek.
-//     Setiap hari,
-//     dimulai pada tanggal 1 Januari 2024 sampai seterusnya,
-//     Pak Dengklek akan melakukan hal berikut :
-//     Membeli seekor bebek jantan.Membeli tt ekor bebek betina,
-//     dengan tt adalah tanggal hari ini.
-//     Pak Dengklek akan terus membeli bebek setiap harinya,
-//     sampai banyaknya bebek betina lebih dari 10 kali lipat banyaknya bebek
-//         jantan.
-//     Pada tanggal berapakah pertama kalinya Pak Dengklek tidak perlu membeli
-//         bebek lagi
-//     ? Lengkapilah program di sebelah kanan agar mengeluarkan tanggal yang
-//           diminta.
 
 #include <iostream>
 using namespace std;
 
-int main() {
-  int jantan = 0, betina = 0;
-  int tanggal = 1;
+int main()
+{
 
-  while (betina <= 10 * jantan) {
+  int n;
+  long long a[500000];
 
-      jantan++;
-      betina += tanggal;
-      tanggal++;
+  cin >> n;
+
+  for (int i = 0; i < n; i++)
+  {
+    cin >> a[i];
   }
 
-  cout << tanggal << endl;
+  for (int i = n - 1; i >= 0; i--)
+  {
+    cout << a[i] << '\n';
+  }
+
+  return 0;
 }
