@@ -4,9 +4,11 @@ using namespace std;
 
 int main()
 {
-    int n, x;
+
+    int n, x; 
     vector<int> sisa;
     int a[1005]; 
+    
 
     cin >> n >> x;
     bool terurut = true;
